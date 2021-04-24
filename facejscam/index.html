@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  
+</head>
+<body>
+  <div class="conteiner">
+    <div class="text-box">
+      <h1>Real Time Face Detection With JavaScript</h1>
+      <h1>Real Time Face Detection With JavaScript</h1>
+    </div>
+  </div>
+  <script defer src="face-api.min.js"></script>
+  <script defer src="script.js"></script>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: black;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+.conteiner{
+  position: absolute;
+  margin-top: 120px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  display:flex ;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.text-box{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+h1{
+  font-size: 20px;
+  font-weight:20;
+  background-color: #000;
+  color: #fafafa;
+  display: block;
+  padding: 0.5em;
+}
+h1:nth-child(2){
+  position: absolute;
+  background-color: #FAFAFA;
+  color: #000;
+  clip-path: inset(-1% -1% 50% -1%);
+}
+    canvas {
+      position: absolute;
+    }
+  </style>
+
+  <video id="video" width="720" height="560" autoplay muted></video>
+</body>
+</html>
